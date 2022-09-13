@@ -20,56 +20,36 @@ namespace Task_1
             {
                 var triangle = new Triangle(3, 3, 2);
                 Console.WriteLine(triangle);
-            }
-            catch (ArgumentException argEx)
-            {
-                Console.WriteLine(argEx.Message);
-            }
-            Console.WriteLine();
+                Console.WriteLine();
 
-            try
-            {
                 var square = new Square(10.35);
                 Console.WriteLine(square);
-            }
-            catch (ArgumentException argEx)
-            {
-                Console.WriteLine(argEx.Message);
-            }
-            Console.WriteLine();
+                Console.WriteLine();
 
-            try
-            {
                 var rhomb = new Rhomb(5.5, 30);
                 Console.WriteLine(rhomb);
-            }
-            catch (ArgumentException argEx)
-            {
-                Console.WriteLine(argEx.Message);
-            }
-            Console.WriteLine();
+                Console.WriteLine();
 
-            try
-            {
-                var rectangle = new Rectangle(15.49, 12.53);
+                var rectangle = new Rectangle(15.49, 10.49);
                 Console.WriteLine(rectangle);
-            }
-            catch (ArgumentException argEx)
-            {
-                Console.WriteLine(argEx.Message);
-            }
-            Console.WriteLine();
+                Console.WriteLine();
 
-            try
-            {
                 var parallelogramm = new Parallelogramm(15, 12.53, 45);
                 Console.WriteLine(parallelogramm);
+                Console.WriteLine();
+
+                var circle = new Circle(3.14);
+                Console.WriteLine(circle);
+                Console.WriteLine();
+
+                var ellipse = new Ellipse(2.5, 3.14);
+                Console.WriteLine(ellipse);
+                Console.WriteLine();
             }
-            catch (ArgumentException argEx)
+            catch (Exception ex)
             {
-                Console.WriteLine(argEx.Message);
+                Console.WriteLine(ex.Message);
             }
-            Console.WriteLine();
         }
     }
 }

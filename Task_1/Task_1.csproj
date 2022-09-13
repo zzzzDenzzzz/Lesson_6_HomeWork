@@ -43,7 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Circle.cs" />
+    <Compile Include="Ellipse.cs" />
     <Compile Include="GeometricFigure.cs" />
+    <Compile Include="IGeometricFigure.cs" />
     <Compile Include="Parallelogramm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
