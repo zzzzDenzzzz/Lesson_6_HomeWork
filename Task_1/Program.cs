@@ -45,6 +45,9 @@ namespace Task_1
                 var ellipse = new Ellipse(2.5, 3.14);
                 Console.WriteLine(ellipse);
                 Console.WriteLine();
+
+                var compaundFigure = new CompoundFigure(triangle, square, rhomb, rectangle, parallelogramm, circle, ellipse);
+                compaundFigure.PrintAreaCompaundFigure();
             }
             catch (Exception ex)
             {
