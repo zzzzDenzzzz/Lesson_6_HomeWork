@@ -2,7 +2,7 @@
 
 namespace Task_1
 {
-    internal class Triangle : GeometricFigure, IGeometricFigure
+    internal class Triangle : GeometricFigure, IGeometricFigure, ISimpleNAngle
     {
         double sideLengthAB;
         double sideLengthBC;
@@ -55,6 +55,35 @@ namespace Task_1
                     throw new ArgumentException(exMessage);
                 }
             }
+        }
+
+        public double Heigth
+        {
+            get
+            {
+                double p = (AB + BC + AC) / 2;
+                double heigth = 2 * Math.Sqrt(p * (p - AB) * (p - BC) * (p - AC) / AC);
+                return heigth;
+            }
+        }
+        public double Base
+        {
+            get { return AC; }
+        }
+        public double Angle
+        {
+            get
+            {
+                return Math.Acos(Math.Pow(AB, 2) + Math.Pow(BC, 2) - Math.Pow(AC, 2) / (2 * AB * BC));
+            }
+        }
+        public double LengthSide
+        {
+            get { return AC; }
+        }
+        public int NumberOfSide
+        {
+            get { return 3; }
         }
 
         public Triangle(double sideLengthAB, double sideLengthBC, double sideLengthAC)

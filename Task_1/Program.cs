@@ -20,6 +20,8 @@ namespace Task_1
             {
                 var triangle = new Triangle(3, 3, 2);
                 Console.WriteLine(triangle);
+                Console.WriteLine($"Высота треугольника равна {triangle.Heigth}");
+                Console.WriteLine($"Основание AC треугольника {triangle.Base}");
                 Console.WriteLine();
 
                 var square = new Square(10.35);
