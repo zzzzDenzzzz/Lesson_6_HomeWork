@@ -83,7 +83,11 @@ namespace Task_1
         }
         public int NumberOfSide
         {
-            get { return 3; }
+            get 
+            {
+                double[] ar = {AB, BC, AC};
+                return ar.Length; 
+            }
         }
 
         public Triangle(double sideLengthAB, double sideLengthBC, double sideLengthAC)
