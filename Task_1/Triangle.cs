@@ -74,7 +74,7 @@ namespace Task_1
         {
             get
             {
-                return Math.Acos(Math.Pow(AB, 2) + Math.Pow(BC, 2) - Math.Pow(AC, 2) / (2 * AB * BC));
+                return (Math.Acos((Math.Pow(AB, 2) + Math.Pow(AC, 2) - Math.Pow(BC, 2)) / (2 * AB * AC))) * 180 / Math.PI;
             }
         }
         public double LengthSide

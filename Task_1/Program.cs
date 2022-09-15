@@ -22,6 +22,7 @@ namespace Task_1
                 Console.WriteLine(triangle);
                 Console.WriteLine($"Высота треугольника равна {triangle.Heigth}");
                 Console.WriteLine($"Основание AC треугольника {triangle.Base}");
+                Console.WriteLine($"Угол между AB и AC равен {triangle.Angle:f3}");
                 Console.WriteLine($"Количествр сторон в треугольнике {triangle.NumberOfSide}");
                 Console.WriteLine();
 
