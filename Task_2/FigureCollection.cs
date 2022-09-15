@@ -10,11 +10,6 @@ namespace Task_2
     {
         IFigure[] figures;
 
-        public FigureCollection(params IFigure[] figures)
-        {
-            this.figures = figures;
-        }
-
         public void PrintAll()
         {
             foreach (var figure in figures)

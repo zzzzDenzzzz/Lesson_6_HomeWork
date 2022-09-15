@@ -2,31 +2,29 @@
 
 namespace Task_2
 {
-    internal class Triangle : IFigure
+    internal class Triangle : GeometricFigure, IFigure
     {
-        int size;
-        public void Color(int color)
-        {
-            Console.ForegroundColor = (ConsoleColor)color;
-        }
+        int height;
 
-        public void CursorPosition(int left, int top)
+        public Triangle()
         {
-            Console.SetCursorPosition(left, top);
+            height = 2;
         }
 
         public void Draw()
         {
-            for (int i = size; i != 0; i--)
+            ConsoleFigure();
+
+            for (int i = height; i != 0; i--)
             {
                 for (int j = i; j != 0; j--)
                 {
                     Console.Write(" ");
                 }
-                Console.Write("*");
-                for (int m = (size - i) * 2; m != 0; m--)
+                Console.Write(SYMBOL);
+                for (int m = (height - i) * 2; m != 0; m--)
                 {
-                    Console.Write("*");
+                    Console.Write(SYMBOL);
                 }
                 Console.WriteLine();
             }
@@ -35,7 +33,22 @@ namespace Task_2
 
         public void Size()
         {
-            size = int.Parse(Console.ReadLine());
+            Console.WriteLine("Height triangle: ");
+            if (int.TryParse(Console.ReadLine(), out int height))
+            {
+                if (height > 0)
+                {
+                    this.height = height;
+                }
+                else
+                {
+                    throw new ArgumentException();
+                }
+            }
+            else
+            {
+                throw new ArgumentException();
+            }
         }
     }
 }
