@@ -45,6 +45,10 @@ namespace Task_2
 
             var fc = new FigureCollection(t, tr, r, rt);
             fc.PrintAll();
+
+            var fc1 = new FigureCollection(Trapezoid.CreateTrapezoid(), Rectangle.CreateRectangle(),
+                Rhomb.CreateRhomb(), Trapezoid.CreateTrapezoid(), Triangle.CreateTriangle());
+            fc1.PrintAll();
         }
     }
 }

@@ -11,6 +11,11 @@ namespace Task_2
             height = 5;
         }
 
+        public static Triangle CreateTriangle()
+        {
+            return new Triangle();
+        }
+
         public void Draw()
         {
             ConsoleFigure();

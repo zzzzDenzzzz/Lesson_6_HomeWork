@@ -11,6 +11,11 @@ namespace Task_2
             diagonal = 11;
         }
 
+        public static Rhomb CreateRhomb()
+        {
+            return new Rhomb();
+        }
+
         public void Draw()
         {
             ConsoleFigure();

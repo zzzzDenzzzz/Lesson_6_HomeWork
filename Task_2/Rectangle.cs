@@ -13,6 +13,11 @@ namespace Task_2
             length = 10;
         }
 
+        public static Rectangle CreateRectangle()
+        {
+            return new Rectangle();
+        }
+
         public void Draw()
         {
             ConsoleFigure();

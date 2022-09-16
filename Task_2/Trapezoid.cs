@@ -13,6 +13,11 @@ namespace Task_2
             baseLength = 5;
         }
 
+        public static Trapezoid CreateTrapezoid()
+        {
+            return new Trapezoid();
+        }
+
         public void Draw()
         {
             ConsoleFigure();
