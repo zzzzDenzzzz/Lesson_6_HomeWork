@@ -20,27 +20,27 @@ namespace Task_2
         static void Main(string[] args)
         {
             var t = new Triangle();
-            //t.Size();
-            //t.Color();
-            //t.CursorPosition();
+            t.Size();
+            t.Color();
+            t.CursorPosition();
             //t.Draw();
 
             var tr = new Trapezoid();
-            //tr.Size();
-            //tr.Color();
-            //tr.CursorPosition();
+            tr.Size();
+            tr.Color();
+            tr.CursorPosition();
             //tr.Draw();
 
             var r = new Rhomb();
-            //r.Size();
-            //r.Color();
-            //r.CursorPosition();
+            r.Size();
+            r.Color();
+            r.CursorPosition();
             //r.Draw();
 
             var rt = new Rectangle();
-            //rt.Size();
-            //rt.Color();
-            //rt.CursorPosition();
+            rt.Size();
+            rt.Color();
+            rt.CursorPosition();
             //rt.Draw();
 
             var fc = new FigureCollection(t, tr, r, rt);
