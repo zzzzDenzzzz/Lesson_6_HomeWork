@@ -6,14 +6,15 @@ namespace Task_2
     {
         int height;
 
-        public Triangle()
+        public Triangle() : base()
         {
-            height = 2;
+            height = 5;
         }
 
         public void Draw()
         {
             ConsoleFigure();
+            Console.WriteLine();
 
             for (int i = height; i != 0; i--)
             {

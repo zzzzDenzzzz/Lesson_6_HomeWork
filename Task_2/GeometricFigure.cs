@@ -9,6 +9,13 @@ namespace Task_2
         protected int cursorPositionLeft;
         protected int cursorPositionTop;
 
+        protected GeometricFigure()
+        {
+            colorFigure = 3;
+            cursorPositionLeft = 10;
+            cursorPositionTop = 10;
+        }
+
         protected void ConsoleFigure()
         {
             Console.SetCursorPosition(cursorPositionLeft, cursorPositionTop);

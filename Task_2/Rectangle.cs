@@ -7,15 +7,16 @@ namespace Task_2
         int height;
         int length;
 
-        public Rectangle()
+        public Rectangle() : base()
         {
-            height = 2;
-            length = 3;
+            height = 5;
+            length = 10;
         }
 
         public void Draw()
         {
             ConsoleFigure();
+            Console.WriteLine();
 
             for (int i = 0; i < height; i++)
             {

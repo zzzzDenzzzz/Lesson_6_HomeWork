@@ -7,15 +7,16 @@ namespace Task_2
         int height;
         int baseLength;
 
-        public Trapezoid()
+        public Trapezoid() : base()
         {
-            height = 2;
-            baseLength = 2;
+            height = 5;
+            baseLength = 5;
         }
 
         public void Draw()
         {
             ConsoleFigure();
+            Console.WriteLine();
 
             for (int i = 0; i < height; i++)
             {

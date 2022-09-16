@@ -6,14 +6,15 @@ namespace Task_2
     {
         int diagonal;
 
-        public Rhomb()
+        public Rhomb() : base()
         {
-            diagonal = 3;
+            diagonal = 11;
         }
 
         public void Draw()
         {
             ConsoleFigure();
+            Console.WriteLine();
 
             int center = diagonal / 2;
             for (int i = 0; i < diagonal; i++)
