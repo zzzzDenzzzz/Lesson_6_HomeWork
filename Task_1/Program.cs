@@ -20,10 +20,13 @@ namespace Task_1
             {
                 var triangle = new Triangle(3, 3, 2);
                 Console.WriteLine(triangle);
-                Console.WriteLine($"Высота треугольника равна {triangle.Heigth}");
-                Console.WriteLine($"Основание AC треугольника {triangle.Base}");
+                Console.BackgroundColor = ConsoleColor.DarkGray;
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine($"Высота треугольника равна {triangle.Heigth:f3}");
+                Console.WriteLine($"Основание AC треугольника {triangle.Base:f3}");
                 Console.WriteLine($"Угол между AB и AC равен {triangle.Angle:f3}");
                 Console.WriteLine($"Количествр сторон в треугольнике {triangle.NumberOfSide}");
+                Console.ResetColor();
                 Console.WriteLine();
 
                 var square = new Square(10.35);
@@ -40,6 +43,13 @@ namespace Task_1
 
                 var parallelogramm = new Parallelogramm(15, 12.53, 45);
                 Console.WriteLine(parallelogramm);
+                Console.BackgroundColor = ConsoleColor.DarkGray;
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine($"Высота параллелограмма равна {parallelogramm.Heigth:f3}");
+                Console.WriteLine($"Основание BC параллелограмма {parallelogramm.Base:f3}");
+                Console.WriteLine($"Угол между AB и BC равен {parallelogramm.Angle:f3}");
+                Console.WriteLine($"Количествр сторон в параллелограмме {parallelogramm.NumberOfSide}");
+                Console.ResetColor();
                 Console.WriteLine();
 
                 var circle = new Circle(3.14);

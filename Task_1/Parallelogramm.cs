@@ -41,7 +41,7 @@ namespace Task_1
             }
         }
 
-        public double Angle
+        public double AngleP
         {
             get { return angleInRadians; }
             private set
@@ -61,7 +61,7 @@ namespace Task_1
         {
             get
             {
-                return AB * BC * Math.Sin(angleInRadians);
+                return BC * Math.Sin(angleInRadians);
             }
         }
         public double Base
@@ -82,11 +82,16 @@ namespace Task_1
             }
         }
 
+        public double Angle
+        {
+            get { return Math.Asin(figureArea / (AB * BC)) * 180 / Math.PI; }
+        }
+
         public Parallelogramm(double sideLengthAB, double sideLengthBC, double angle)
         {
             AB = sideLengthAB;
             BC = sideLengthBC;
-            Angle = angle;
+            AngleP = angle;
 
             if (AB != BC)
             {
@@ -112,7 +117,7 @@ namespace Task_1
 
         public double Area()
         {
-            return AB * BC * Math.Sin(Angle);
+            return AB * BC * Math.Sin(AngleP);
         }
     }
 }
