@@ -2,7 +2,7 @@
 
 namespace Task_1
 {
-    internal class Triangle : GeometricFigure, IGeometricFigure, ISimpleNAngle
+    internal class Triangle : GeometricFigure, ISimpleNAngle
     {
         double sideLengthAB;
         double sideLengthBC;

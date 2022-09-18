@@ -2,7 +2,7 @@
 
 namespace Task_1
 {
-    internal class Parallelogramm : GeometricFigure, IGeometricFigure
+    internal class Parallelogramm : GeometricFigure, ISimpleNAngle
     {
         double sideLengthAB;
         double sideLengthBC;
@@ -54,6 +54,31 @@ namespace Task_1
                 {
                     throw new ArgumentException(exMessage);
                 }
+            }
+        }
+
+        public double Heigth
+        {
+            get
+            {
+                return AB * BC * Math.Sin(angleInRadians);
+            }
+        }
+        public double Base
+        {
+            get { return BC; }
+        }
+
+        public double LengthSide
+        {
+            get { return AB; }
+        }
+        public int NumberOfSide
+        {
+            get
+            {
+                double[] ar = { AB, BC, AB, BC };
+                return ar.Length;
             }
         }
 

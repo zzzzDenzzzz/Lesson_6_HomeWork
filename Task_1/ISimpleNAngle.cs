@@ -1,6 +1,6 @@
 ﻿namespace Task_1
 {
-    internal interface ISimpleNAngle
+    internal interface ISimpleNAngle : IGeometricFigure
     {
         double Heigth { get; }
         double Base { get; }
